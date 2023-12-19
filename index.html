@@ -1193,16 +1193,15 @@ Models for 2023</a></li>
 <h1 class="tabset">CFB Models for 2023</h1>
 <p>The models that are used here are bayesian linear regression models
 that try to estimate point differential from the teams that are playing
-and adjust for home field advantage. However, it still seems to perform
-very well and is easy to understand. A coefficient is estimated for each
-team which correspond to the strength for each team along with a
+and adjust for home field advantage. A coefficient is estimated for each
+team which corresponds to the strength for that team along with a
 coefficient for home field advantage.</p>
 <div id="no-prior" class="section level2 tabset">
 <h2 class="tabset">No prior</h2>
 <p>This model doesn’t use any prior for the team strengths or home field
 advantage.</p>
-<div id="regular-season-rankings" class="section level3">
-<h3>Regular season rankings</h3>
+<div id="regular-season-team-rankings" class="section level3">
+<h3>Regular season team rankings</h3>
 <p>The Strength column displays the estimated strength for each team,
 the SOS column displays the strength of schedule for each team based on
 the estimated strengths, and SOR displays the strength of record for
@@ -6484,6 +6483,427 @@ SWAC
 </tbody>
 </table>
 </div>
+<div id="regular-season-conference-rankings" class="section level3">
+<h3>Regular season conference rankings</h3>
+<p>The Average column displays the mean estimated strength of all teams
+in the conference, the Minimum column displays the smallest estimated
+strength in each conference, and the Maximum column displays the largest
+estimated strength for each conference.</p>
+<table class=" lightable-classic-2 lightable-striped lightable-hover" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+FBS Conferences Sorted by Average Strength
+</caption>
+<thead>
+<tr>
+<th style="empty-cells: hide;" colspan="1">
+</th>
+<th style="padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
+<div style="TRUE">
+Strength
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+Conference
+</th>
+<th style="text-align:right;">
+Average
+</th>
+<th style="text-align:right;">
+Minimum
+</th>
+<th style="text-align:right;">
+Maximum
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Pac-12
+</td>
+<td style="text-align:right;">
+25.698
+</td>
+<td style="text-align:right;">
+7.547
+</td>
+<td style="text-align:right;">
+46.475
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Big 12
+</td>
+<td style="text-align:right;">
+24.241
+</td>
+<td style="text-align:right;">
+8.361
+</td>
+<td style="text-align:right;">
+41.463
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SEC
+</td>
+<td style="text-align:right;">
+24.076
+</td>
+<td style="text-align:right;">
+3.166
+</td>
+<td style="text-align:right;">
+38.045
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Big Ten
+</td>
+<td style="text-align:right;">
+20.658
+</td>
+<td style="text-align:right;">
+8.026
+</td>
+<td style="text-align:right;">
+44.585
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ACC
+</td>
+<td style="text-align:right;">
+19.059
+</td>
+<td style="text-align:right;">
+8.140
+</td>
+<td style="text-align:right;">
+36.242
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mountain West
+</td>
+<td style="text-align:right;">
+9.230
+</td>
+<td style="text-align:right;">
+-5.028
+</td>
+<td style="text-align:right;">
+21.829
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FBS Independents
+</td>
+<td style="text-align:right;">
+7.737
+</td>
+<td style="text-align:right;">
+-6.367
+</td>
+<td style="text-align:right;">
+36.689
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sun Belt
+</td>
+<td style="text-align:right;">
+7.212
+</td>
+<td style="text-align:right;">
+-8.283
+</td>
+<td style="text-align:right;">
+22.602
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+American Athletic
+</td>
+<td style="text-align:right;">
+5.437
+</td>
+<td style="text-align:right;">
+-9.854
+</td>
+<td style="text-align:right;">
+28.254
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Conference USA
+</td>
+<td style="text-align:right;">
+4.727
+</td>
+<td style="text-align:right;">
+-8.015
+</td>
+<td style="text-align:right;">
+20.252
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mid-American
+</td>
+<td style="text-align:right;">
+0.399
+</td>
+<td style="text-align:right;">
+-17.069
+</td>
+<td style="text-align:right;">
+14.129
+</td>
+</tr>
+</tbody>
+</table>
+<table class=" lightable-classic-2 lightable-striped lightable-hover" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+FCS Conferences Sorted by Average Strength
+</caption>
+<thead>
+<tr>
+<th style="empty-cells: hide;" colspan="1">
+</th>
+<th style="padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
+<div style="TRUE">
+Strength
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+Conference
+</th>
+<th style="text-align:right;">
+Average
+</th>
+<th style="text-align:right;">
+Minimum
+</th>
+<th style="text-align:right;">
+Maximum
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+MVFC
+</td>
+<td style="text-align:right;">
+0.859
+</td>
+<td style="text-align:right;">
+-33.003
+</td>
+<td style="text-align:right;">
+28.252
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Big Sky
+</td>
+<td style="text-align:right;">
+-3.436
+</td>
+<td style="text-align:right;">
+-25.269
+</td>
+<td style="text-align:right;">
+15.357
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+UAC
+</td>
+<td style="text-align:right;">
+-4.158
+</td>
+<td style="text-align:right;">
+-13.595
+</td>
+<td style="text-align:right;">
+4.672
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ivy
+</td>
+<td style="text-align:right;">
+-8.251
+</td>
+<td style="text-align:right;">
+-16.542
+</td>
+<td style="text-align:right;">
+0.920
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CAA
+</td>
+<td style="text-align:right;">
+-10.442
+</td>
+<td style="text-align:right;">
+-27.757
+</td>
+<td style="text-align:right;">
+7.125
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Patriot
+</td>
+<td style="text-align:right;">
+-11.616
+</td>
+<td style="text-align:right;">
+-21.586
+</td>
+<td style="text-align:right;">
+3.264
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Big South-OVC
+</td>
+<td style="text-align:right;">
+-16.091
+</td>
+<td style="text-align:right;">
+-31.310
+</td>
+<td style="text-align:right;">
+-1.759
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Southland
+</td>
+<td style="text-align:right;">
+-17.694
+</td>
+<td style="text-align:right;">
+-28.289
+</td>
+<td style="text-align:right;">
+-5.194
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FCS Independents
+</td>
+<td style="text-align:right;">
+-19.469
+</td>
+<td style="text-align:right;">
+-19.469
+</td>
+<td style="text-align:right;">
+-19.469
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Southern
+</td>
+<td style="text-align:right;">
+-19.876
+</td>
+<td style="text-align:right;">
+-40.565
+</td>
+<td style="text-align:right;">
+-7.818
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MEAC
+</td>
+<td style="text-align:right;">
+-22.156
+</td>
+<td style="text-align:right;">
+-39.736
+</td>
+<td style="text-align:right;">
+-10.642
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NEC
+</td>
+<td style="text-align:right;">
+-25.693
+</td>
+<td style="text-align:right;">
+-34.664
+</td>
+<td style="text-align:right;">
+-19.131
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SWAC
+</td>
+<td style="text-align:right;">
+-29.807
+</td>
+<td style="text-align:right;">
+-47.398
+</td>
+<td style="text-align:right;">
+-12.116
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pioneer
+</td>
+<td style="text-align:right;">
+-30.700
+</td>
+<td style="text-align:right;">
+-41.736
+</td>
+<td style="text-align:right;">
+-18.286
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div id="postseason-games-predictions" class="section level3">
 <h3>Postseason games predictions</h3>
 <p>The teams that are highlighted in yellow are selected by the model to
@@ -7485,8 +7905,8 @@ Albany
 <p>This model uses results from the model used on 2022 data without
 priors as a prior for the team strengths and home field advantage in the
 model using 2023 data.</p>
-<div id="regular-season-rankings-1" class="section level3">
-<h3>Regular season rankings</h3>
+<div id="regular-season-team-rankings-1" class="section level3">
+<h3>Regular season team rankings</h3>
 <p>The Strength column displays the estimated strength for each team,
 the SOS column displays the strength of schedule for each team based on
 the estimated strengths, and SOR displays the strength of record for
@@ -12763,6 +13183,427 @@ Pioneer
 </td>
 <td style="text-align:right;">
 -59.210
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="regular-season-conference-rankings-1" class="section level3">
+<h3>Regular season conference rankings</h3>
+<p>The Average column displays the mean estimated strength of all teams
+in the conference, the Minimum column displays the smallest estimated
+strength in each conference, and the Maximum column displays the largest
+estimated strength for each conference.</p>
+<table class=" lightable-classic-2 lightable-striped lightable-hover" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+FBS Conferences Sorted by Average Strength
+</caption>
+<thead>
+<tr>
+<th style="empty-cells: hide;" colspan="1">
+</th>
+<th style="padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
+<div style="TRUE">
+Strength
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+Conference
+</th>
+<th style="text-align:right;">
+Average
+</th>
+<th style="text-align:right;">
+Minimum
+</th>
+<th style="text-align:right;">
+Maximum
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+SEC
+</td>
+<td style="text-align:right;">
+27.285
+</td>
+<td style="text-align:right;">
+7.025
+</td>
+<td style="text-align:right;">
+43.959
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Big 12
+</td>
+<td style="text-align:right;">
+24.577
+</td>
+<td style="text-align:right;">
+14.315
+</td>
+<td style="text-align:right;">
+40.411
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Big Ten
+</td>
+<td style="text-align:right;">
+23.439
+</td>
+<td style="text-align:right;">
+12.443
+</td>
+<td style="text-align:right;">
+44.974
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pac-12
+</td>
+<td style="text-align:right;">
+22.828
+</td>
+<td style="text-align:right;">
+6.238
+</td>
+<td style="text-align:right;">
+39.919
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ACC
+</td>
+<td style="text-align:right;">
+18.963
+</td>
+<td style="text-align:right;">
+6.699
+</td>
+<td style="text-align:right;">
+35.378
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+American Athletic
+</td>
+<td style="text-align:right;">
+9.218
+</td>
+<td style="text-align:right;">
+-4.591
+</td>
+<td style="text-align:right;">
+27.286
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sun Belt
+</td>
+<td style="text-align:right;">
+8.931
+</td>
+<td style="text-align:right;">
+-5.066
+</td>
+<td style="text-align:right;">
+22.076
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FBS Independents
+</td>
+<td style="text-align:right;">
+7.308
+</td>
+<td style="text-align:right;">
+-9.042
+</td>
+<td style="text-align:right;">
+34.540
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mountain West
+</td>
+<td style="text-align:right;">
+6.116
+</td>
+<td style="text-align:right;">
+-6.477
+</td>
+<td style="text-align:right;">
+18.722
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Conference USA
+</td>
+<td style="text-align:right;">
+2.700
+</td>
+<td style="text-align:right;">
+-10.768
+</td>
+<td style="text-align:right;">
+15.792
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mid-American
+</td>
+<td style="text-align:right;">
+2.109
+</td>
+<td style="text-align:right;">
+-8.430
+</td>
+<td style="text-align:right;">
+13.390
+</td>
+</tr>
+</tbody>
+</table>
+<table class=" lightable-classic-2 lightable-striped lightable-hover" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+FCS Conferences Sorted by Average Strength
+</caption>
+<thead>
+<tr>
+<th style="empty-cells: hide;" colspan="1">
+</th>
+<th style="padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
+<div style="TRUE">
+Strength
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+Conference
+</th>
+<th style="text-align:right;">
+Average
+</th>
+<th style="text-align:right;">
+Minimum
+</th>
+<th style="text-align:right;">
+Maximum
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+MVFC
+</td>
+<td style="text-align:right;">
+-3.351
+</td>
+<td style="text-align:right;">
+-32.325
+</td>
+<td style="text-align:right;">
+21.463
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Big Sky
+</td>
+<td style="text-align:right;">
+-4.740
+</td>
+<td style="text-align:right;">
+-25.695
+</td>
+<td style="text-align:right;">
+12.596
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+UAC
+</td>
+<td style="text-align:right;">
+-7.282
+</td>
+<td style="text-align:right;">
+-15.901
+</td>
+<td style="text-align:right;">
+2.192
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CAA
+</td>
+<td style="text-align:right;">
+-10.857
+</td>
+<td style="text-align:right;">
+-29.434
+</td>
+<td style="text-align:right;">
+1.539
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Southern
+</td>
+<td style="text-align:right;">
+-11.594
+</td>
+<td style="text-align:right;">
+-29.173
+</td>
+<td style="text-align:right;">
+1.199
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ivy
+</td>
+<td style="text-align:right;">
+-14.170
+</td>
+<td style="text-align:right;">
+-23.034
+</td>
+<td style="text-align:right;">
+-6.081
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FCS Independents
+</td>
+<td style="text-align:right;">
+-15.327
+</td>
+<td style="text-align:right;">
+-15.327
+</td>
+<td style="text-align:right;">
+-15.327
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Big South-OVC
+</td>
+<td style="text-align:right;">
+-16.319
+</td>
+<td style="text-align:right;">
+-28.536
+</td>
+<td style="text-align:right;">
+-2.365
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Southland
+</td>
+<td style="text-align:right;">
+-17.925
+</td>
+<td style="text-align:right;">
+-26.970
+</td>
+<td style="text-align:right;">
+-1.209
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Patriot
+</td>
+<td style="text-align:right;">
+-17.955
+</td>
+<td style="text-align:right;">
+-27.747
+</td>
+<td style="text-align:right;">
+-0.541
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MEAC
+</td>
+<td style="text-align:right;">
+-21.949
+</td>
+<td style="text-align:right;">
+-36.286
+</td>
+<td style="text-align:right;">
+-7.812
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SWAC
+</td>
+<td style="text-align:right;">
+-23.035
+</td>
+<td style="text-align:right;">
+-39.720
+</td>
+<td style="text-align:right;">
+-8.876
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NEC
+</td>
+<td style="text-align:right;">
+-26.972
+</td>
+<td style="text-align:right;">
+-34.580
+</td>
+<td style="text-align:right;">
+-16.787
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pioneer
+</td>
+<td style="text-align:right;">
+-35.026
+</td>
+<td style="text-align:right;">
+-45.687
+</td>
+<td style="text-align:right;">
+-23.525
 </td>
 </tr>
 </tbody>
